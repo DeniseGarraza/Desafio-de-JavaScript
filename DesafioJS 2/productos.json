@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "titulo": "Saco lola",
+    "precio": 10000,
+    "color": "nude",
+    "imagen": "./img/outfit1.png",
+    "categoria": {
+      "nombre": "Abrigos",
+      "id": "Abrigos"
+    }
+  },
+  {
+    "id": "2",
+    "titulo": "Conjunto Vero",
+    "precio": 12000,
+    "color": "blanco",
+    "imagen": "./img/outfit2.png",
+    "categoria": {
+      "nombre": "Conjuntos",
+      "id": "Conjuntos"
+    }
+  },
+  {
+    "id": "3",
+    "titulo": "Sweater Mia",
+    "precio": 6000,
+    "color": "marron",
+    "imagen": "./img/outfit3.png",
+    "categoria": {
+      "nombre": "Sweaters",
+      "id": "Sweaters"
+    }
+  },
+  {
+    "id": "4",
+    "titulo": "Conjunto Victoria",
+    "precio": 12000,
+    "color": "blanco",
+    "imagen": "./img/conjuntowhite.png",
+    "categoria": {
+      "nombre": "Conjuntos",
+      "id": "Conjuntos"
+    }
+  },
+  {
+    "id": "5",
+    "titulo": "Pantalon Rude",
+    "precio": 12000,
+    "color": "blanco",
+    "imagen": "./img/pantalon.png",
+    "categoria": {
+      "nombre": "Pantalones",
+      "id": "Pantalones"
+    }
+  },
+  {
+    "id": "6",
+    "titulo": "Saco Luz",
+    "precio": 12000,
+    "color": "blanco",
+    "imagen": "./img/saco2.png",
+    "categoria": {
+      "nombre": "Abrigos",
+      "id": "Abrigos"
+    }
+  }
+]

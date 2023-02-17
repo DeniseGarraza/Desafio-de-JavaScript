@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+.header-mobile {
+    display: none;
+}
+header {
+    background-color: #b5a392;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 160px;
+    height: 160x;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.main {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    grid-gap: 40px;
+}
+
+.main__item a {
+    color: white;
+    text-decoration: solid;
+}
+
+.main__item.active a {
+    text-decoration: solid;
+}
+
+.main__volver a {
+    color: white;
+    text-decoration: solid;
+}
+
+.main__volver.active a {
+    text-decoration: solid;
+}
+
+.numerito {
+    background-color: #ffffff;
+    color: #b5a392;
+    padding: 0.15rem 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.boton-carrito.active .numerito {
+    background-color: #b5a392;
+    color: white;
+}
+
+
+
+/* MAIN */
+.banner {
+    height: 80vh;
+    background-image: url("./img/portada.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.banner button {
+    color: #ffffff;
+    background-color: #b5a3925e;
+    padding-inline: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.banner button:hover{
+    background-color: #b5a392;
+    color: white;
+    border: 2px solid white;
+
+}
+.titulo-principal {
+    background-color: #b5a39253;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 25px;
+    margin-top: 30px;
+}
+
+/* BOTONES CLASES */
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#Todos {
+
+    color: white;
+    background-color: #b5a392;
+    border: 2px solid #b5a392;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#Todos:hover {
+    background-color: white;
+    color: #b5a392;
+}
+
+#Abrigos {
+
+    color: white;
+    background-color: #b5a392;
+    border: 2px solid #b5a392;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Abrigos:hover {
+    background-color: white;
+    color: #b5a392;
+}
+
+#Conjuntos {
+
+    color: white;
+    background-color: #b5a392;
+    border: 2px solid #b5a392;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Conjuntos:hover {
+    background-color: white;
+    color: #b5a392;
+}
+
+#Pantalones {
+    color: white;
+    background-color: #b5a392;
+    border: 2px solid #b5a392;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Pantalones:hover {
+    background-color: white;
+    color: #b5a392;
+}
+
+/* PRODUCTOS */
+
+
+#contenedor-productos {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.producto-detalles {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.titulo {
+    background-color: #b5a39253;
+    color: #b5a392;
+    text-align: center;
+}
+
+.producto-precio {
+    text-align: center;
+    color: #b5a392;
+}
+
+.producto-imagen {
+    max-width: 100%;
+}
+
+/* Boton de agregar */
+.btn {
+    color: white;
+    background-color: #b5a392;
+    border: 2px solid #b5a392;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #b5a392;
+}
+
+
+/* carrito */
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-vacio .carrito-comprado {
+    color: #b5a392;
+    display: none;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.292);
+    color: #b5a392;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small {
+    font-size: 0.75rem;
+}
+
+.carrito-producto-eliminar {
+    border: 0;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.292);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #b5a392;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha {
+    display: flex;
+}
+
+.carrito-acciones-total {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.292);
+    padding: 1rem;
+    color: #b5a392;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+    border: 0;
+    background-color: #b5a392;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.disabled {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+        height: 110px;
+    }
+    .logo{
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .banner{
+      display: none;
+    }
+    .wrapper {
+        overflow: hidden;
+    }
+    
+    #contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+        margin: 30px;
+
+    }
+
+    .menu {
+        margin-left: 90px;
+        margin-right: 50px;
+    }
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .open-menu {
+        background-color: #b5a392;
+        color: white;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+    
+}
